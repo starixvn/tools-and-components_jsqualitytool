@@ -32,3 +32,5 @@ Dependencies/Fanex.Age.UI.Forecast.dll
 Dependencies/Fanex.Age.UI.TotalBets.dll
 
 /Website/Views/Reports/AgentOutstanding.cshtml
+Backup*/
+/UpgradeLog*

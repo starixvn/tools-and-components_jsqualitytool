@@ -2,8 +2,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="531da20f-aec5-4382-a317-0f70a217a573" Version="1.4.2" Language="en-US" Publisher="Dennis Myren, Luke Page, Matthew Schaad" />
-    <DisplayName>JSLint.VS2012</DisplayName>
-    <Description>Adds JSLint support into Visual Studio</Description>
+    <DisplayName>JSHint.VS2015</DisplayName>
+    <Description xml:space="preserve">Adds JSHint support into Visual Studio</Description>
     <MoreInfo>http://jslint4vs2010.codeplex.com</MoreInfo>
     <License>license.txt</License>
     <Icon>Resources\Images_32bit.bmp</Icon>
@@ -14,6 +14,10 @@
     <InstallationTarget Version="11.0" Id="Microsoft.VisualStudio.IntegratedShell" />
     <InstallationTarget Version="11.0" Id="Microsoft.VisualStudio.Premium" />
     <InstallationTarget Version="11.0" Id="Microsoft.VisualStudio.Ultimate" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />

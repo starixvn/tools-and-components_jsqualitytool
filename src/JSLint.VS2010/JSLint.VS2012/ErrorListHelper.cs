@@ -4,6 +4,8 @@ using Microsoft.VisualStudio.TextManager.Interop;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio;
 using System.Diagnostics;
+using EnvDTE;
+using EnvDTE80;
 
 namespace JSLint.VS2010.VS2010
 {
@@ -11,7 +13,7 @@ namespace JSLint.VS2010.VS2010
         IServiceProvider, IDisposable
     {
         private ErrorListProvider _errorProvider;
-        private ServiceProvider _serviceProvider;
+        private IServiceProvider _serviceProvider;
 		private int _errorsSinceSuspend = 0;
 
         public int ErrorCount
@@ -22,13 +24,13 @@ namespace JSLint.VS2010.VS2010
             }
         }
 
-        public ErrorListHelper(object dte2)
+        public ErrorListHelper(IServiceProvider serviceProvider)
         {
-            _serviceProvider = new ServiceProvider(dte2 as Microsoft.VisualStudio.OLE.Interop.IServiceProvider);
+            _serviceProvider = serviceProvider;
             _errorProvider = new ErrorListProvider(_serviceProvider);//this implementing IServiceProvider
-            _errorProvider.ProviderName = "JS Lint";
-            _errorProvider.ProviderGuid = new Guid(); // should be package guid
-            _errorProvider.Show();
+            ////_errorProvider.ProviderName = "JS Lint";
+            ////_errorProvider.ProviderGuid = new Guid(GuidList.guidPkgString); // should be package guid
+            ////_errorProvider.Show();
         }
 
         public object GetService(Type serviceType)
@@ -49,7 +51,7 @@ namespace JSLint.VS2010.VS2010
             if (_errorsSinceSuspend > 0 && focusErrorList)
 			{
 				_errorProvider.Show();
-				_errorProvider.BringToFront();
+				//_errorProvider.BringToFront();
 			}
         }
 
@@ -162,7 +164,7 @@ namespace JSLint.VS2010.VS2010
         public void Dispose()
         {
             _errorProvider.Dispose();
-            _serviceProvider.Dispose();
+            //_serviceProvider.Dispose();
         }
 
         #endregion

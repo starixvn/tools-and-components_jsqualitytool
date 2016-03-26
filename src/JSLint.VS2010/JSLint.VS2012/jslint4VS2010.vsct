@@ -90,7 +90,7 @@
 				<CommandFlag>DefaultInvisible</CommandFlag>
 				<Strings>
 					<CommandName>lint</CommandName>
-					<ButtonText>JS Lint Selection</ButtonText>
+					<ButtonText>JS Hint Selection</ButtonText>
 				</Strings>
 			</Button>
 
@@ -99,7 +99,7 @@
 				<Icon guid="guidImages" id="jslintPic" />
 				<Strings>
 					<CommandName>lint</CommandName>
-					<ButtonText>JS Lint</ButtonText>
+					<ButtonText>JS Hint</ButtonText>
 				</Strings>
 			</Button>
 
@@ -117,7 +117,7 @@
 				<Icon guid="guidImages" id="jslintPic" />
 				<Strings>
 					<CommandName>options</CommandName>
-					<ButtonText>JS Lint Options...</ButtonText>
+					<ButtonText>JS Hint Options...</ButtonText>
 				</Strings>
 			</Button>
 
@@ -128,7 +128,7 @@
 				<CommandFlag>DefaultInvisible</CommandFlag>
 				<Strings>
 					<CommandName>lint</CommandName>
-					<ButtonText>JS Lint</ButtonText>
+					<ButtonText>JS Hint</ButtonText>
 				</Strings>
 			</Button>
 
@@ -169,7 +169,7 @@
 				<CommandFlag>DynamicVisibility</CommandFlag>
 				<Strings>
 					<CommandName>addconfig</CommandName>
-					<ButtonText>Add JSLint Options...</ButtonText>
+					<ButtonText>Add JSHint Options...</ButtonText>
 				</Strings>
 			</Button>
 
@@ -179,7 +179,7 @@
 				<CommandFlag>DynamicVisibility</CommandFlag>
 				<Strings>
 					<CommandName>editconfig</CommandName>
-					<ButtonText>Edit JSLint Options...</ButtonText>
+					<ButtonText>Edit JSHint Options...</ButtonText>
 				</Strings>
 			</Button>
 
@@ -189,7 +189,7 @@
 				<CommandFlag>DynamicVisibility</CommandFlag>
 				<Strings>
 					<CommandName>removeconfig</CommandName>
-					<ButtonText>Remove JSLint Options</ButtonText>
+					<ButtonText>Remove JSHint Options</ButtonText>
 				</Strings>
 			</Button>
 
@@ -200,7 +200,7 @@
 				<CommandFlag>DefaultInvisible</CommandFlag>
 				<Strings>
 					<CommandName>wipeerrors</CommandName>
-					<ButtonText>Clear JS Lint Errors</ButtonText>
+					<ButtonText>Clear JS Hint Errors</ButtonText>
 				</Strings>
 			</Button>
 

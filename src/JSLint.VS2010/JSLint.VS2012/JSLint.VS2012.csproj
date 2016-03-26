@@ -9,14 +9,14 @@
     <ProjectGuid>{971FC5FC-687E-439C-A395-5F728C96FA9F}</ProjectGuid>
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <AssemblyName>JSLint.VS2012</AssemblyName>
+    <AssemblyName>JSHint.VS2015</AssemblyName>
     <DeploymentDirectory>.\bin\</DeploymentDirectory>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -40,7 +40,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>JSLint.VS2012</RootNamespace>
+    <RootNamespace>JSHint.VS2015</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
